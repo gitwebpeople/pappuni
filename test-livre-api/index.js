@@ -8,18 +8,18 @@ const SAC_DATA = {
     USRKEY: USER_KEY,
     NOMSAC: "Gabriel Luz",
     SACMAL: "gabriel.n64@hotmail.com",
-    CODCEP: "06824270",
+    CODCEP: "06824777",
     CODUFE: "SP",
-    DSCEND: "Rua avaré",
-    NUMEND: "511",
+    DSCEND: "Rua teste",
+    NUMEND: "766",
     DSCCPL: "",
-    DSCBAI: "Jardim Dom José",
-    DSCCID: "Embu das Artes",
+    DSCBAI: "Jardim Teste",
+    DSCCID: "São Paulo",
     NUMPAI: "",
     CODOPR: "",
     NUMDDD: "11",
-    NUMTEL: "42034042",
-    CODCMF: "46996999871",
+    NUMTEL: "4455485",
+    CODCMF: "88856455771",
     CALMOD: "1",
     DATVCT: "24/04/2019",
     VLRBOL: "150",
@@ -68,6 +68,6 @@ async function generateTicket(token) {
     const response = await instance.post(_URL, data);
 
     console.log('====================================');
-    console.log(response.data);
+    console.log("http://fatura2.livre.com.br/fatura"+response.data.urlpst  );
     console.log('====================================');
 }
